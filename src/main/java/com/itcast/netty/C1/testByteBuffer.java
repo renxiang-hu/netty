@@ -25,7 +25,6 @@ public class testByteBuffer {
             while (true){
                 //从channel读取数据，向buffer写入
                 int len = channel.read(buffer);
-                System.out.println(len);
                 if (len == -1){
                     break;
                 }
@@ -38,7 +37,7 @@ public class testByteBuffer {
                 buffer.clear(); //切换至写模式
             }
         } catch (IOException e){
-
+           e.printStackTrace();
         }
     }
 }
