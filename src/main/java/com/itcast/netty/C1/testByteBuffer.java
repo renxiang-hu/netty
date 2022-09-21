@@ -1,5 +1,7 @@
 package com.itcast.netty.C1;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -14,6 +16,7 @@ import java.nio.channels.FileChannel;
  * 5.重复1~4步骤
  */
 
+@Slf4j
 public class testByteBuffer {
 
     public static void main(String[] args) {
