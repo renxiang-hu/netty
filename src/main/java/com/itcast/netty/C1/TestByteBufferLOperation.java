@@ -17,5 +17,20 @@ public class TestByteBufferLOperation {
         //从头开始读
         buffer.get(new byte[4]);
         debugAll(buffer);
+        buffer.rewind();
+        debugAll(buffer);
+
+        //mark & reset
+        //mark做一个标记，记录position的位置，reset是将position重置到mark位置
+        System.out.println((char) buffer.get());  // a
+        System.out.println((char) buffer.get());  // b
+        buffer.mark();  //加标记，索引2的位置        // 这是把mark标记到索引为2的位置
+        System.out.println((char) buffer.get());  // c
+        System.out.println((char) buffer.get());  // d
+        buffer.reset();  //重新回到索引为2的位置     // 这是重新指向索引为2的位置
+        System.out.println((char) buffer.get());  // c
+
+        //get(i)
+        System.out.println((char) buffer.get(3));
     }
 }
