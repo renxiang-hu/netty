@@ -12,7 +12,8 @@ public class TestFileWalkFileTree {
     public static void main(String[] args) throws IOException {
         AtomicInteger dirCount = new AtomicInteger();
         AtomicInteger fileCount = new AtomicInteger();
-        Files.walkFileTree(Paths.get("D:\\JavaProject\\nginx-1.18.0"),new SimpleFileVisitor<Path>(){
+//        Files.walkFileTree(Paths.get("D:\\JavaProject\\nginx-1.18.0"),new SimpleFileVisitor<Path>(){
+        Files.walkFileTree(Paths.get("/Users/hurenxiang/Desktop/javaTest/javaJUC"),new SimpleFileVisitor<Path>(){
 
             @Override
             public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
