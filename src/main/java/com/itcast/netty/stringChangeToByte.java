@@ -14,10 +14,10 @@ public class stringChangeToByte {
         ByteBuffer byteBuffer = ByteBuffer.allocate(16);
         byteBuffer.put("hello".getBytes());
         debugAll(byteBuffer);
-        //第二种方式,转换成功就切换成读模式
+        //第二种方式,转换成功就切换成读模式，position在索引0的位置
         ByteBuffer byteBuffer1 = StandardCharsets.UTF_8.encode("hello");
         debugAll(byteBuffer1);
-        //第三种方式,转换成功就切换成读模式
+        //第三种方式,转换成功就切换成读模式，position在索引0的位置
         ByteBuffer byteBuffer2 = ByteBuffer.wrap("hello".getBytes());
         debugAll(byteBuffer2);
     }
