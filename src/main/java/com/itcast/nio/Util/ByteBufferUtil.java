@@ -1,4 +1,4 @@
-package com.itcast.netty.Util;
+package com.itcast.nio.Util;
 
 import io.netty.util.internal.StringUtil;
 

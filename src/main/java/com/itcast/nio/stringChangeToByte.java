@@ -1,9 +1,9 @@
-package com.itcast.netty;
+package com.itcast.nio;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 
-import static com.itcast.netty.Util.ByteBufferUtil.debugAll;
+import static com.itcast.nio.Util.ByteBufferUtil.debugAll;
 
 /**
  * 字符串转化成byteBuffer的三种方式

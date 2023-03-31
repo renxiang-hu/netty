@@ -1,8 +1,8 @@
-package com.itcast.netty;
+package com.itcast.nio;
 
 import java.nio.ByteBuffer;
 
-import static com.itcast.netty.Util.ByteBufferUtil.debugAll;
+import static com.itcast.nio.Util.ByteBufferUtil.debugAll;
 
 public class testByteBufferRead {
     public static void main(String[] args) {

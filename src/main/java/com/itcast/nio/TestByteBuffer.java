@@ -1,9 +1,8 @@
-package com.itcast.netty;
+package com.itcast.nio;
 
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 

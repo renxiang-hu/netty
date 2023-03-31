@@ -1,10 +1,10 @@
-package com.itcast.netty;
+package com.itcast.nio;
 
 import lombok.extern.slf4j.Slf4j;
 
 import java.nio.ByteBuffer;
 
-import static com.itcast.netty.Util.ByteBufferUtil.debugAll;
+import static com.itcast.nio.Util.ByteBufferUtil.debugAll;
 
 @Slf4j
 public class testReadAndWrite {

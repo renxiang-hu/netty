@@ -1,10 +1,10 @@
-package com.itcast.netty;
+package com.itcast.nio;
 
 import java.io.FileInputStream;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
-import static com.itcast.netty.Util.ByteBufferUtil.debugAll;
+import static com.itcast.nio.Util.ByteBufferUtil.debugAll;
 
 /**
  * 分散读，比如"onetwothree",分别读取one，two，three
